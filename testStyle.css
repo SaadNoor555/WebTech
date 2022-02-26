@@ -1,0 +1,25 @@
+<style>
+    /* when all same style */
+    h1 
+    {
+        color: red;
+        background-color: yellow;
+    }
+
+    #id1
+    {
+        color: maroon;
+        background-color: cyan;
+    }
+
+    /* class when multiple same style */
+    .color-white
+    {
+        color: white;
+    }
+    .bg-blue
+    {
+        background-color: blue;
+    }
+
+</style>

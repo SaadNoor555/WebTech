@@ -1,0 +1,22 @@
+<html>
+	<head>
+		
+			<script src="myscript.js"></script>
+
+	</head>
+	
+	<body>
+		<script>
+			//document.write('Hi from js');
+			
+			x = 10;
+			y = 20;
+			
+			sum = x+y;
+			document.write(sum);
+			
+			alert(sum);
+		</script>
+	</body>
+	
+</html>
