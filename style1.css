@@ -1,0 +1,10 @@
+.leftText
+{
+    float: left;
+}
+
+.rightText
+{
+    /* text-align: right; */
+    float: right;
+}

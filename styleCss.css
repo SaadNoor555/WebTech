@@ -1,0 +1,67 @@
+body
+{
+    background-color: bisque;
+    /* background-image: url('nice.jpg'); */
+    background-repeat: no-repeat; /* repeat-x, repeat-y*/
+    background-position: left bottom;
+}
+
+p
+{
+    font-family: 'Times New Roman', Times, serif; /*goes in order*/
+    font-size: 50px;
+    font-weight: 900;
+    /* font-variant: small-caps; */
+    color: rgb(53, 59, 59);
+    color: #e98839;
+    text-decoration: underline;
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent: 50;
+    /* letter-spacing: 50; */
+    /* word-spacing: 50; */
+}
+
+a:link
+{
+    color: blue;
+}
+a:visited
+{
+    color: black;
+}
+a:hover
+{
+    color: teal;
+}
+a:active
+{
+    color: yellow;
+}
+
+ul
+{
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+th, td, tr
+{
+    color: red;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: rgb(51, 80, 66);
+}
+
+table
+{
+    border-color: blueviolet;
+    border-width: 2px;
+    border-style: fill;
+    
+}
+
+th
+{
+    background-color:rgb(145, 235, 185);
+}
