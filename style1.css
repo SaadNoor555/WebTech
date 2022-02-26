@@ -8,3 +8,20 @@
     /* text-align: right; */
     float: right;
 }
+
+p
+{
+    top: 10px;
+    left: 150px;
+    position: fixed;
+}
+
+.bm
+{
+    border: 10px solid red;
+    background-color: orange;
+    width: 500px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 10px 10px 5px rgb(116, 54, 54);
+}
