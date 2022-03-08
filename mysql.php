@@ -1,0 +1,25 @@
+<?php
+$serverName = "localhost";
+$username = "root";
+$password  = "";
+$dbTable = "myDB";
+//create connection
+$connection = mysqli_connect($serverName, $username, $password);
+// $connection = mysqli_connect($serverName, $username, $password, $dbTable);
+
+//check connection
+if(!$connection){
+    die("connection failed" . mysqli_connect_error());
+}
+echo "conncection successful";
+
+$sqlQ = "create database myDB";
+if(mysqli_query($connection, $sqlQ)){
+    echo "database created successfully";
+}
+else{
+    echo "error creating table: " . mysqli_error();
+}
+//closing connection
+mysqli_close($connection);
+?>
