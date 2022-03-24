@@ -1,12 +1,17 @@
 <p>book-list works!</p>
 <table border="1" [cellPadding]="5">
-    <tr>
+    <thead><tr>
         <th>Name</th> <th>Year</th> <th>Availability</th>
-    </tr>
-    <tr>
-        <td>Saad</td> <td>1999</td> <td>Yes</td>
-    </tr>
-    <tr>
-        <td>Noor</td> <td>1999</td> <td>No</td>
-    </tr>
+    </tr></thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td>{{book.name}}</td>
+            <td>{{book.year}}</td>
+            <td *ngIf="book.availability">availabile</td>
+            <td *ngIf="!book.availability">unavailabile</td>
+            <td><button (click)="deleteThis(book.id)">Delete</button></td>
+
+        </tr>
+    </tbody>
 </table>
+
