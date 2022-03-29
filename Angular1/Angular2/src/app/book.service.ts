@@ -11,4 +11,17 @@ export class BookService {
 	getBooks(): Book[]{
 		return this.books;
 	}
+
+	deleteBook(givenBook: Book): Book[]{
+		this.books = this.books.filter(book => givenBook.id != book.id )
+		return this.books;
+	}
+
+	bookToBeUpdated = new Book()
+	setBookToBeUpdated(givenBook: Book){
+		this.bookToBeUpdated = givenBook
+	}
+	getBookToBeUpdated(): Book{
+		return this.bookToBeUpdated;
+	}
 }

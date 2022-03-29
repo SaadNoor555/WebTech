@@ -23,6 +23,6 @@ else {
 document.write("<br>");
 
 for(var i=1; i<100; i++)
-{
+{3
 }
 

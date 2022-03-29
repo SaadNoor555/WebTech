@@ -1,7 +1,9 @@
 <p>book-list works!</p>
 <table border="1" [cellPadding]="5">
     <thead><tr>
-        <th>Name</th> <th>Year</th> <th>Availability</th>
+        <th>Name</th> 
+        <th>Year</th> 
+        <th>Availability</th>
     </tr></thead>
     <tbody>
         <tr *ngFor="let book of books">
@@ -9,8 +11,8 @@
             <td>{{book.year}}</td>
             <td *ngIf="book.availability">availabile</td>
             <td *ngIf="!book.availability">unavailabile</td>
-            <td><button (click)="deleteThis(book.id)">Delete</button></td>
-
+            <td><button (click)="deleteThis(book)">Delete</button></td>
+            <td><button (click)="updateThis(book)">Update</button></td>
         </tr>
     </tbody>
 </table>
