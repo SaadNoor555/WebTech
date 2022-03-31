@@ -25,5 +25,9 @@ export class BookListComponent implements OnInit {
 		this.bookService.setBookToBeUpdated(givenBook, givenIndex)
 		this.router.navigate(['update-book'])
 	}
+	addBook(){
+		this.router.navigate(['add-book'])
+
+	}
 
 }
