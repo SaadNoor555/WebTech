@@ -18,10 +18,17 @@ export class BookService {
 	}
 
 	bookToBeUpdated = new Book()
-	setBookToBeUpdated(givenBook: Book){
+	bookToBeUpdatedIndex : any = 0;
+	setBookToBeUpdated(givenBook: Book, givenIndex: Number){
 		this.bookToBeUpdated = givenBook
+		this.bookToBeUpdatedIndex = givenIndex
 	}
 	getBookToBeUpdated(): Book{
 		return this.bookToBeUpdated;
+	}
+	updateBook(givenBook: Book){
+		// alert(givenBook.name)
+		this.books.splice(this.bookToBeUpdatedIndex,1,givenBook)
+		// this.router.navigate(['books'])
 	}
 }

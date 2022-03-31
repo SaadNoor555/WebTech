@@ -6,13 +6,13 @@
         <th>Availability</th>
     </tr></thead>
     <tbody>
-        <tr *ngFor="let book of books">
+        <tr *ngFor="let book of books; let i=index">
             <td>{{book.name}}</td>
             <td>{{book.year}}</td>
             <td *ngIf="book.availability">availabile</td>
             <td *ngIf="!book.availability">unavailabile</td>
             <td><button (click)="deleteThis(book)">Delete</button></td>
-            <td><button (click)="updateThis(book)">Update</button></td>
+            <td><button (click)="updateThis(book, i)">Update</button></td>
         </tr>
     </tbody>
 </table>

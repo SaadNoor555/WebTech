@@ -1,15 +1,16 @@
 <form>
     <div class="form-group">
       <label for="name">Book Name</label>
-      <input type="text" class="form-control" id="bookName" placeholder={{givenBook.name}}>
+      <!-- <input type="text" class="form-control" id="bookName" value={{givenBook.name}}> -->
+      <input type="text" class="form-control" id="bookName" [(ngModel)]="givenBook.name" [ngModelOptions]="{standalone: true}">
     </div>
     <div class="form-group">
       <label for="year">Release Year</label>
-      <input type="text" class="form-control" id="year" placeholder={{givenBook.year}}>
+      <input type="text" class="form-control" id="year" [(ngModel)]="givenBook.year" [ngModelOptions]="{standalone: true}">
     </div>
     <div class="form-group">
         <label for="availability">Availability</label>
-        <input type="text" class="form-control" id="availability" placeholder={{givenBook.availability}}>
+        <input type="text" class="form-control" id="availability"  [(ngModel)]="givenBook.availability" [ngModelOptions]="{standalone: true}">
       </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="updateBook()">Submit</button>
   </form>
