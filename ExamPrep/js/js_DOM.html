@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            .my-text{
+                text-align: center;
+                color: teal;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="myHeading">Heading 1</h1>
+        
+        <p id="pera">This is a simple paragraph 1</p>
+        <p id="pp">This is a simple paragraph 2</p>
+        <p>This is a simple paragraph 3</p>
+        <p>This is a simple paragraph 4</p>
+
+        <div class="my-text" id="myDiv">
+            A simple Text
+            <h1>Hello Bangladesh 1</h1>
+            <h1>Hello Bangladesh 2</h1>
+        </div>
+        <button onclick="document.getElementById('myHeading').style.color='blue'">Click me</button>
+        <br>
+        <button onclick="addH()">Add H5</button>
+    </body>
+    <script>
+        var x = document.getElementById('pera');
+        console.log(x);
+        x.innerHTML = "yo yo yo";
+        x.style.color = "orange";
+        var pars = document.getElementsByTagName("p");
+        console.log(pars);
+        pars[0].innerHTML= "modified"; 
+        for(var i=0; i<pars.length; i++)
+            console.log(pars[i]);
+        document.getElementById('pp').style.color = "yellow";
+        function addH(){
+            var headingElement = document.createElement("h5");
+            var textNode = document.createTextNode("this is from JS!");
+            headingElement.appendChild(textNode);
+            var par = document.getElementsByTagName("div");
+            par[0].appendChild(headingElement);
+        }
+    </script>
+</html>

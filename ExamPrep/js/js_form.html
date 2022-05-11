@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <form name="myform">
+            <label for="username">Username:</label>
+            <input type="text" name="username"> <br>
+            <label for="pass">Password:</label>
+            <input type="password" name="pass"> <br>
+            <input type="submit" onclick="validate()">
+        </form>
+
+        <script>
+            function validate(){
+                var username = document.forms["myform"]["username"].value;
+                var password = document.forms["myform"]["pass"].value;
+                // alert("too");
+                var id = username+" "+password;
+                alert(id);
+            }
+        </script>
+    </body>
+</html>

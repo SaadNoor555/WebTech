@@ -58,7 +58,7 @@
 
     $arr2 = array(
         array(2, 3, 5),
-        arrat(8, 2, 1),
+        array(8, 2, 1),
         array(9, 0, 6)
     );
     echo $arr2[2][1] . "<br>";
@@ -70,7 +70,7 @@
     }
 
     $res = add(6, 7);
-    echo $res . "<br>"
+    echo $res . "<br>";
 
 
 

@@ -1,0 +1,81 @@
+
+h1{
+    color:bisque;
+    background-color: rosybrown;
+}
+h2{
+    color:burlywood;
+    background-color: teal;
+}
+.fancy-border{
+    border-left: 5px solid red;
+    border-right: 5px dotted green;
+    border-top: 10px solid purple;
+    border-bottom: 5px inset maroon;
+}
+#id1{
+    color:coral;
+    background-color: blue;
+}
+.color-teal{
+    color: teal;
+}
+.bg-color-white{
+    background-color: white;
+}
+body{
+    background-color: bisque;
+    /* background-image: url('sources/flower1.jpg'); */
+    background-repeat: no-repeat;
+    background-position: left;
+}
+p{
+    background-color: bisque;
+    /* color: teal; */
+    /* color: rgb(204, 204, 225); */
+    color: #0099ff;
+    font-family: "Times New Roman" 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+    font-variant:small-caps;
+    text-decoration: underline;
+    text-align: center;
+    text-transform:capitalize;
+    text-indent: 20px;
+    word-spacing: 10px;
+}
+
+a:link{
+    color:#0099ff;
+}
+a:hover{
+    background-color: chocolate;
+    color:cadetblue;
+}
+a:active{
+    color:blueviolet;
+}
+a:visited{
+    color:red;
+}
+
+ul{
+    list-style-type: square;
+    list-style-position: outside;
+}
+ol{
+    list-style: lower-alpha;
+}
+
+tr, th, td, table{
+    color:teal;
+    /* short hand property : width style color */
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    text-align: center;
+}
+th{
+    background-color: white;
+    font-weight: 900;
+}

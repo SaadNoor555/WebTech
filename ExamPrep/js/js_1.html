@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <!-- <script src="myscript.js" ></script> -->
+    </head>
+    <body>
+        <button onclick="show()">Click me</button>
+        <script>
+            var x = 100;
+            if(x>10){
+                document.write("x is greater than 10<br>");
+            }
+            else{
+                document.write("x is not greater than 10<br>");
+            }
+
+            for(var x=0; x<10; x++){
+                document.write(x+"<br>");
+            }
+            
+            function add(x, y){
+                return x+y;
+            }
+            document.write("sum= "+add(5, 10)+"<br>");
+
+            function show(){
+                alert("hello world");
+            }
+            // show();
+
+            // var x= confirm("do you agree?");
+            // alert(x);
+
+            // var inp = prompt("enter your name: ", "");
+            // alert("hello "+inp);
+        </script>
+    </body>
+</html>
